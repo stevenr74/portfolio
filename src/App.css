@@ -14,14 +14,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #303036;
+  padding: 6px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-size: calc(10px + 1vmin);
   color: white;
+}
+
+
+.links {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.tile {
+  color: white;
+}
+
+
+body {
+  background-color: #282c34;
 }
 
 .App-link {
