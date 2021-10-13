@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #303336;
+  background-color: #282E35;
   padding: 6px;
   position: relative;
   text-align: center;
@@ -66,17 +66,22 @@ body{
 img {
   width: 100%;
   max-width: 600px;
+  vertical-align: bottom;
 }
 
 a {
   text-decoration: none;
 }
 
+p {
+  color: white;
+}
+
 .displaybox {
   margin-top: 20px;
+  margin-left: 10%;
   position: absolute;
-  left: 4%;
-  padding: 5px;
+  left: auto;
   box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
   6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -84,4 +89,17 @@ a {
   22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.displaybox .infotext {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+
+.displaybox:hover .infotext {
+  visibility: visible;
+  opacity: 1;
 }
