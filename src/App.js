@@ -5,6 +5,9 @@ import ProjectsContainer from './components/ProjectsContainer';
 
 
 function App() {
+
+  document.title = "Steven's Portfolio";
+
   return (
     <div className="App">
       <header className="App-header">
