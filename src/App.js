@@ -14,9 +14,7 @@ function App() {
         <TopNav />
         <LinkBar></LinkBar>
       </header>
-      <body>
         <ProjectsContainer />
-      </body>
     </div>
   );
 }
