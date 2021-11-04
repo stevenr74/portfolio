@@ -1,6 +1,6 @@
 import React from 'react'
-import grv2 from '../images/gamerecommenderv2.PNG'
-import gametheory from '../images/gametheory.png'
+import grv2 from '../images/gamerecommenderv2_square.png'
+import gametheory from '../images/gametheory_square.png'
 
 const ProjectsContainer = (props) => {
 
@@ -20,7 +20,7 @@ const ProjectsContainer = (props) => {
                     <img src={gametheory} alt="Game Theory"/>
                 </a>
                 <figcaption className="infotext">
-                    Uses examples to explain game theory and strategic thinking.
+                    Uses examples to explain game theory and strategic thinking. Built with React.
                 </figcaption>
             </figure>
         </div>

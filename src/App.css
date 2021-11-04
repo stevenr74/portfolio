@@ -59,10 +59,17 @@ body{
 }
 
 img {
-  max-height: 380px;
-  max-width: 600px;
-  height: auto;
-  width: 50vw;
+  height: 400px;
+  width: 400px;
+  object-fit: scale-down;
+  vertical-align: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 a {
@@ -75,18 +82,12 @@ p {
 
 .displayBoxContainer {
   display: flex;
-  justify-content: center;
   object-fit: contain;
   padding: 50px;
-  height: auto;
-  width: auto;
+  justify-content:space-evenly;
 }
 
 .displayBox {
-  max-height: 380px;
-  max-width: 600px;
-  height: auto;
-  width: auto;
   vertical-align: bottom;
   margin: 0%;
   box-shadow:
@@ -103,14 +104,10 @@ p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  justify-content: center;
-  max-width: 600px;
   color: white;
-
-  max-width: 600px;
-  height: auto;
-  width: auto;
-
+  width: 200px;
+  margin-left: 100px;
+  padding: 15px;
   -webkit-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms;
 }
