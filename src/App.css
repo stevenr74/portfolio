@@ -49,14 +49,6 @@ body{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 img {
   height: 400px;
@@ -65,10 +57,18 @@ img {
   vertical-align: bottom;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   img {
-    height: 150px;
-    width: 150px;
+    height: 45vw;
+    width: 45vw;
+  }
+
+  .displayBox .infotext {
+    width: 45vw;
+  }
+
+  .tile {
+    padding: 0px;
   }
 }
 
@@ -101,15 +101,23 @@ p {
 
 
 .displayBox .infotext {
+  padding-top: 20px;
   position: absolute;
-  opacity: 0;
-  visibility: hidden;
+  visibility: visible;
   color: white;
-  width: 200px;
-  margin-left: 100px;
-  padding: 15px;
+  max-width: 400px;
   -webkit-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms;
+}
+
+.displayBox:hover {
+  box-shadow:
+  2.8px 2.8px 2.2px #141a2e,
+  6.7px 6.7px 5.3px #141a2e,
+  12.5px 12.5px 10px #141a2e,
+  22.3px 22.3px 17.9px #141a2e,
+  41.8px 41.8px 33.4px #141a2e,
+  50px 50px 40px #141a2e;
 }
 
 .displayBox:hover .infotext {

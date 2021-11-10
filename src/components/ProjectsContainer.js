@@ -11,6 +11,7 @@ const ProjectsContainer = (props) => {
                     <img src={grv2} alt="Game Recommender v2"/>
                 </a>
                 <figcaption className="infotext">
+                    <h3>Game Recommender</h3>
                     Recommends games. Built using React for the frontend, Python for the database,
                     and bundled with webpack.
                 </figcaption>
@@ -20,6 +21,7 @@ const ProjectsContainer = (props) => {
                     <img src={gametheory} alt="Game Theory"/>
                 </a>
                 <figcaption className="infotext">
+                    <h3>Understanding Game Theory</h3>
                     Uses examples to explain game theory and strategic thinking. Built with React.
                 </figcaption>
             </figure>
