@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -33,11 +34,18 @@ li:last-child {
 .tile {
   color: white;
   padding: 8px;
+  border-radius: 50%;
 }
 
+.tile:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1E4573;
+}
+/*#1E4573 */
 .tile:hover {
   color: #1E4573;
-
+  box-shadow: 0 0 5px #1E4573;
+  text-shadow: 0 0 5px #1E4573;
 }
 
 
@@ -99,6 +107,16 @@ p {
   100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
+.displayBox:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1E4573;
+}
+
+.displayBox:hover {
+  color: #1E4573;
+  box-shadow: 0 0 10px #1E4573;
+  text-shadow: 0 0 10px #1E4573;
+}
 
 .displayBox .infotext {
   padding-top: 20px;
@@ -110,15 +128,6 @@ p {
   transition: opacity 600ms, visibility 600ms;
 }
 
-.displayBox:hover {
-  box-shadow:
-  2.8px 2.8px 2.2px #141a2e,
-  6.7px 6.7px 5.3px #141a2e,
-  12.5px 12.5px 10px #141a2e,
-  22.3px 22.3px 17.9px #141a2e,
-  41.8px 41.8px 33.4px #141a2e,
-  50px 50px 40px #141a2e;
-}
 
 .displayBox:hover .infotext {
   visibility: visible;
