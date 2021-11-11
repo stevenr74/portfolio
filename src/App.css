@@ -78,7 +78,10 @@ img {
   width: 400px;
   object-fit: scale-down;
   vertical-align: bottom;
+
 }
+
+
 
 @media only screen and (max-width: 800px) {
   img {
@@ -124,6 +127,8 @@ p {
   22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
+
+  transition: all .2s ease-in-out;
 }
 
 .displayBox:hover::before {
@@ -135,6 +140,8 @@ p {
   color: #1E4573;
   box-shadow: 0 0 20px #1E4573;
   text-shadow: 0 0 20px #1E4573;
+
+  transform: scale(1.1);
 }
 
 .displayBox .infotext {
