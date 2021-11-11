@@ -20,14 +20,28 @@
   position: absolute;
   top: 0;
   left: 0;
+
 }
+
 
 li {
   margin-bottom: 20px;
+
+  
 }
 
 li:last-child {
  margin-bottom: 0px;
+}
+
+.title {
+  background: linear-gradient(
+    to right, 
+    hsl(198, 83%, 47%), 
+    hsl(240, 83%, 96%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -36,6 +50,7 @@ li:last-child {
   padding: 8px;
   border-radius: 50%;
 }
+
 
 .tile:hover::before {
   transform: scale(1.1);
@@ -78,6 +93,10 @@ img {
   .tile {
     padding: 0px;
   }
+
+  .links {
+    padding-left: 20px;
+  }
 }
 
 a {
@@ -114,8 +133,8 @@ p {
 
 .displayBox:hover {
   color: #1E4573;
-  box-shadow: 0 0 10px #1E4573;
-  text-shadow: 0 0 10px #1E4573;
+  box-shadow: 0 0 20px #1E4573;
+  text-shadow: 0 0 20px #1E4573;
 }
 
 .displayBox .infotext {

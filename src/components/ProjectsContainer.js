@@ -12,7 +12,7 @@ const ProjectsContainer = (props) => {
                 </a>
                 <figcaption className="infotext">
                     <h3>Game Recommender</h3>
-                    Recommends games. Built using React for the frontend, Python for the database,
+                    Recommends games. Built using React for the frontend, Python for the SQLite database,
                     and bundled with webpack.
                 </figcaption>
             </figure>
