@@ -7,8 +7,8 @@ const LinkBar = (props) => {
     return (
         <div>
             <ul className="links">
-                <li><a className="tile" href="https://github.com/stevenr74"><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li><a className="tile" href="https://www.linkedin.com/in/steven-rabey-6359b11a1/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li><a href="https://github.com/stevenr74"><FontAwesomeIcon className="tile" icon={faGithub} /></a></li>
+                <li><a href="https://www.linkedin.com/in/steven-rabey-6359b11a1/"><FontAwesomeIcon className="tile" icon={faLinkedin} /></a></li>
             </ul>
         </div>
     )

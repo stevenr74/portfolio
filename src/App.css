@@ -10,7 +10,6 @@
   box-sizing: border-box;
   padding: 6px;
   text-align: center;
-  font-size: calc(10px + 1vmin);
   color: white;
 }
 
@@ -35,11 +34,8 @@ li:last-child {
 }
 
 .title {
-  background: linear-gradient(
-    to right, 
-    hsl(198, 83%, 47%), 
-    hsl(240, 83%, 96%)
-  );
+  font-size: calc(10px + 0.7vmin);
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,6 +45,8 @@ li:last-child {
   color: white;
   padding: 8px;
   border-radius: 50%;
+  font-size: 20px;
+  transition: all .2s ease-in-out;
 }
 
 
@@ -58,12 +56,12 @@ li:last-child {
 }
 /*#1E4573 */
 .tile:hover {
+  transform: scale(1.5);
   color: #1E4573;
   box-shadow: 0 0 5px #1E4573;
   text-shadow: 0 0 5px #1E4573;
 }
-
-
+/*#21272D */
 body{
   background-color: #21272D;
 }
@@ -158,4 +156,83 @@ p {
 .displayBox:hover .infotext {
   visibility: visible;
   opacity: 1;
+}
+
+
+.gitLink {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 2.5vw;
+}
+
+.bottomLeft {
+  position: relative;
+  bottom: 5px;
+  opacity: 1;
+  left: 5px;
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+/* Testing Nav */
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 360px;
+  height: 50px;
+  background-color: #465666;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 120px;
+}
+a:nth-child(2) {
+  width: 120px;
+}
+a:nth-child(3) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 120px;
+  left: 0;
+  background-color: #1E4573;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 120px;
+  left: 120px;
+  background-color: #731E45;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 120px;
+  left: 240px;
+  background-color: #45731E;
 }

@@ -2,7 +2,8 @@ import './App.css';
 import TopNav from './components/TopNav';
 import LinkBar from './components/LinkBar';
 import ProjectsContainer from './components/ProjectsContainer';
-
+import Navigation from './components/Navigation';
+//add about section, skills section?
 
 function App() {
 
